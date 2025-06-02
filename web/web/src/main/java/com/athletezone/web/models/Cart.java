@@ -25,4 +25,8 @@ public class Cart extends BaseEntity {
     @EqualsAndHashCode.Exclude // Mencegah infinite recursion
     @ToString.Exclude
     private List<CartItem> cartItems = new ArrayList<>();
+
+    public Cart orElseGet(Object o) {
+        return null;
+    }
 }
